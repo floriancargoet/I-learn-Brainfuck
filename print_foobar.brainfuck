@@ -9,7 +9,7 @@ init variables
     > +++++ +++++    add 10 to b
     > +++++ +++++ +  add 11 to c
     <<-              decrement a
-]                    end of while : b = 100; c = 110
+]                    end of while: b = 100 (close to 'f' 'b' 'a'); c = 110 (close to 'o' 'r')
 
 adjust variables and print
 ==========================
