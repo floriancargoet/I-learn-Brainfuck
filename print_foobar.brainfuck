@@ -1,0 +1,26 @@
+******************
+* print 'foobar' *
+******************
+
+init variables
+==============
++++++ +++++          a = 10
+[                    while(a)
+    > +++++ +++++    add 10 to b
+    > +++++ +++++ +  add 11 to c
+    <<-              decrement a
+]                    end of while : b = 100; c = 110
+
+adjust variables and print
+==========================
+>                    b
+++ .                 = 102; print 'f'
+>                    c
++ .                  = 111; print 'o'
+  .                         print 'o'
+<                    b
+---- .               = 98;  print 'b'
+- .                  = 97;  print 'a'
+>                    c
++++ .                = 114; print 'r'
+
