@@ -1,0 +1,23 @@
+********
+* Echo *
+********
+
+Serial echo: read all then print all
+(end of file behavior: no change)
+====================================
+> +    mem = (O 1)
+[>,]   read until 0 (= no change)
+<[<]   rewind until 0
+>>[.>]  replay and print until 0
+
+
+Parallel echo: read one print one
+(end of file behavior: no change)
+=================================
+,        read first char
+[        while the last read value is not 0
+    .    print it
+    [-]  reset to 0
+    ,    read next char
+]
+
