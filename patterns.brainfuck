@@ -15,3 +15,10 @@ Substract (_a, b) -> (_0, b - a)
 
 Multiply (_a, b, 0, 0, 0) -> (_0, b, 0, 0, a*b)
 [->[>+>+<<-]>[-<+>]>[->+<]<<<]
+
+While(a && b){a--; b--} (0, _a, b, 0) -> (0, max(a-b, 0), max(b-a, 0), _0 )
+[>[<                    if  a; if  b
+    ->-<                dec a; dec b;
+    [<]                 if a goto empty space else don't move
+    >>                  go to b or stop flag
+] ]
