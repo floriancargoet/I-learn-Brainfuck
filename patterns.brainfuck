@@ -1,0 +1,17 @@
+This file is not valid since reserved characters are used as punctuation.
+'_' marks the initial and final positions of the data pointer.
+
+Duplicate a value (_a, 0, 0) -> (_0, a, a)
+[->+>+<<]
+
+Move a value (_a, 0) -> (_0, a)
+[->+<]
+
+Add (_a, b) -> (_0, b + a)
+[->+<]   yes, it the same
+
+Substract (_a, b) -> (_0, b - a)
+[->-<]
+
+Multiply (_a, b, 0, 0, 0) -> (_0, b, 0, 0, a*b)
+[->[>+>+<<-]>[-<+>]>[->+<]<<<]
