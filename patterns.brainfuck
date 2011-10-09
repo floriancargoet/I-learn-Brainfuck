@@ -22,3 +22,19 @@ While(a && b){a--; b--} (0, _a, b, 0) -> (0, max(a-b, 0), max(b-a, 0), _0 )
     [<]                 if a goto empty space else don't move
     >>                  go to b or stop flag
 ] ]
+
+
+If(a){code}, destroying a
+[
+  code
+  [-]
+]
+
+If(a){code}, preserving a (by copying it)
+[->+>+<<]    (_a, 0, 0) -> (_0, a, a)
+>>[-<<+>>]   (_0, a, a) -> (a, a, _0)
+
+<[           now we can work on the copy
+  code
+  [-]
+]
