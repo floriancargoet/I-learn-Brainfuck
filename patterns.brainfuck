@@ -38,3 +38,15 @@ If(a){code}, preserving a (by copying it)
   code
   [-]
 ]
+
+
+If(x){code1}else{code2}
+                         (0 0 _x)
+[<+<+>>-]<<[>>+<<-]+     (_1 x x) 
+>[
+    code1
+    <-
+    >[-]]                (0 _0 x) or (1 _0 x=0)
+<[
+    code2
+-]                       (_0 0 x)
